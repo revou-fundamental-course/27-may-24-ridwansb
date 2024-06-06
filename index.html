@@ -3,93 +3,123 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ridwan portfolio</title>
+    <title>My Website</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <nav>
-      <div class="logo-icon"></div>
-      <section>
-        <a class="nav-item" href="#home">Home</a>
-        <a class="nav-item" href="#facilities">Our Facilities</a>
-        <a class="nav-item" href="#massage">Massage Us</a>
-        <a></a>
+    
+      <header class="navbar">
+        <img class="logo" src="assets/lgi.png" alt="Logo">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#h">Home</a></li>
+                    <li><a href="#p">Our Profile</a></li>
+                    <li><a href="#m">Message Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+
+    <main id="h">
+      <section class="welcome-section">
+        <h1>Hi RIDWAN, Welcome To Website</h1>
+        <p>SMKN 1 Garut (SMEAN)</p>
+        <div class="image-placeholder">
+          <div class="banner-container">
+            <img class="banner-img" src="assets/banner.jpg" alt="Banner 1" />
+            <img
+              class="banner-img"
+              src="assets/gedung.jpg"
+              alt="Banner 2"
+              style="display: none"
+            />
+            <img
+              class="banner-img"
+              src="assets/upacara.jpg"
+              alt="Banner 3"
+              style="display: none"
+            />
+          
       </section>
-    </nav>
 
-    <hr />
-
-    <section class="section-container">
-      <section id="home">
-        <header>
-          <h1>Hi Ridwan, Welcome To Website</h1>
-        </header>
-        <article>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Atque
-            nemo, culpa maxime laborum perspiciatis aliquam nostrum aut soluta
-            ratione sapiente quia facere beatae reprehenderit laudantium nam
-            natus praesentium asperiores maiores!
-          </p>
-          <div class="banner-contener"></div>
-        </article>
-      </section>
-
-      <hr />
-
-      <section id="facilities">
-        <header>
-          <h1>Our Facilities</h1>
-        </header>
-
-        <article class="facility-list">
-          <div>
-            <div
-              style="width: 50px; height: 50px; border: 1px solid black"
-            ></div>
-            <h5>Sekolah</h5>
+      <section class="facilitation-section">
+        <h2 id="p">Our Facilitation</h2>
+        <div class="facilitation-items">
+          <div class="facilitation-item">
+            <div class="circle">
+              <img src="assets/teacher.png" alt="Professional Teacher" />
+            </div>
+            <p>Professional Teacher</p>
           </div>
-
-          <div>
-            <div
-              style="width: 50px; height: 50px; border: 1px solid black"
-            ></div>
-            <h5>Sekolah</h5>
+          <div class="facilitation-item">
+            <div class="circle">
+              <img src="assets/prestasi.png" alt="prestasi" />
+            </div>
+            <p>Performance</p>
           </div>
-
-          <div>
-            <div
-              style="width: 50px; height: 50px; border: 1px solid black"
-            ></div>
-            <h5>Sekolah</h5>
+          <div class="facilitation-item">
+            <div class="circle">
+              <img src="assets/clas.png" alt="class" />
+            </div>
+            <p>Classroom</p>
           </div>
-        </article>
+        </div>
       </section>
 
-      <hr />
+      <section class="contact-section">
+        <h2 id="m">Message Us</h2>
+        <div class="contact-container">
+          <form id="contact-form">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required />
 
-      <section id="massage">
-        <header>
-          <h1>Massage Us</h1>
-        </header>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
 
-        <section class="massage-us-section">
-          <!--Form-->
-          <section>
-            <form>
-              <label for="">Nama</label>
-              <input type="text" />
-            </form>
-          </section>
+            <label for="phone">Nomor Telepon:</label>
+            <input type="tel" id="phone" name="phone" required />
 
-          <!--Result-->
-          <section class="result-container">
-            <div class="form-result"></div>
-          </section>
-        </section>
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <label for="gender">Jenis Kelamin:</label>
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="Laki-Laki"
+              required
+            />Laki-Laki
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="Perempuan"
+              required
+            />Perempuan
+
+            <button type="submit">Submit</button>
+          </form>
+          <div class="info-box">
+            <p id="current-time">
+              Current time: <span id="time"></span>
+            </p>
+            <p>Nama: <span id="display-name"></span></p>
+            <p>Email: <span id="display-email"></span></p>
+            <p>Nomor Telepon: <span id="display-phone"></span></p>
+            <p>Pesan: <span id="display-message"></span></p>
+            <p>Jenis Kelamin: <span id="display-gender"></span></p>
+          </div>
+        </div>
       </section>
-    </section>
+    </main>
 
-    <footer></footer>
+    <footer>
+      <p>Created by Ridwan Sunda Buana</p>
+    </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
